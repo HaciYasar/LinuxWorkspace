@@ -1,0 +1,18 @@
+Python_free_1
+
+ge = False   # LMS ödev yapımı
+chronic = True
+immune = False
+
+risk = age or chronic or immune
+risk
+
+age=int(input('Sigara bağımlısıysanız lütfen yaşınızı giriniz: '))
+if 75<age:
+  age=str(True)
+elif age<75:
+  age=str(False)
+chronic=str(input('Herhamgi bir kronik rahatsızlığınız var mı? Evet veya Hayır: '))
+immune=str(input('Bağışıklık sisteminiz zayıf mı? Evet veya Hayır?: '))
+risk=age or chronic or immune
+print('Dou you have risk of death from Corona Virus?',risk)
